@@ -671,8 +671,7 @@ body {
 }
 
 .about-content .heading::after {
-    left: 0;
-    transform: none;
+    display: none;
 }
 
 .about-content h3 {
@@ -1490,8 +1489,7 @@ body {
     }
 
     .about-content .heading::after {
-        left: 50%;
-        transform: translateX(-50%);
+        display: none;
     }
 
     .about-info { grid-template-columns: 1fr; }
