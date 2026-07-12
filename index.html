@@ -1,0 +1,508 @@
+<!DOCgit remote set-url origin https://github.com/your-username/portfolio.git
+git push -u origin mainTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Srihari — Android Developer with 1 year of experience at G Tech Solutions, Pudukkottai. Skilled in Kotlin, Firebase, Android SDK, OneSignal and Google Play Store deployment.">
+    <meta name="keywords" content="Android Developer, Kotlin, Firebase, Srihari, G Tech Solutions, Pudukkottai, Mobile App Developer">
+    <title>Srihari | Android Developer</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- AOS Animate on Scroll -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Particle Canvas Background -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Cursor Glow Effect -->
+    <div class="cursor-glow" id="cursor-glow"></div>
+
+    <!-- ==================== HEADER ==================== -->
+    <header class="header" id="header">
+        <a href="#home" class="logo">S<span>rihari</span></a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- ==================== HOME SECTION ==================== -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <div class="greeting-badge" data-aos="fade-down" data-aos-delay="100">
+                <span class="pulse-dot"></span> Available for Opportunities
+            </div>
+
+            <h3 data-aos="fade-right" data-aos-delay="200">Hello, It's Me</h3>
+            <h1 data-aos="fade-right" data-aos-delay="300">Srihari</h1>
+            <h3 data-aos="fade-right" data-aos-delay="400">And I'm a <span id="typed-text"></span></h3>
+
+            <p data-aos="fade-up" data-aos-delay="500">
+                Android Developer with hands-on experience building, debugging, and independently deploying
+                production-ready mobile applications to the Google Play Store.
+            </p>
+
+            <div class="home-cta" data-aos="fade-up" data-aos-delay="600">
+                <div class="social-media">
+                    <a href="https://www.linkedin.com/in/srihari18" target="_blank" id="linkedin-hero" title="LinkedIn">
+                        <i class='bx bxl-linkedin'></i>
+                    </a>
+                    <a href="https://github.com/195314" target="_blank" id="github-hero" title="GitHub">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="mailto:harivk165@gmail.com" id="email-hero" title="Email">
+                        <i class='bx bx-envelope'></i>
+                    </a>
+                </div>
+                <a href="resume/SRIHARI (3) (1).pdf" target="_blank" download class="btn" id="download-resume-btn">
+                    <i class='bx bx-download'></i> Download Resume
+                </a>
+            </div>
+
+            <div class="stats-row" data-aos="fade-up" data-aos-delay="700">
+                <div class="stat-item">
+                    <h4>1+</h4>
+                    <p>Year Experience</p>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <h4>4+</h4>
+                    <p>Apps Deployed</p>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <h4>16+</h4>
+                    <p>Ginex POS Variants</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="home-img" data-aos="zoom-in" data-aos-delay="400">
+            <div class="img-wrapper">
+                <div class="img-ring ring-1"></div>
+                <div class="img-ring ring-2"></div>
+                <div class="img-ring ring-3"></div>
+                <img src="./images/photo.jpg" alt="Srihari - Android Developer">
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section class="about" id="about">
+        <div class="about-img" data-aos="fade-right" data-aos-duration="1000">
+            <div class="about-img-container">
+                <img src="./images/photo.jpg" alt="Srihari - Android Developer">
+                <div class="about-img-overlay">
+                    <div class="tech-badge kotlin"><i class='bx bxl-android'></i> Kotlin</div>
+                    <div class="tech-badge firebase"><i class='bx bxl-firebase'></i> Firebase</div>
+                    <div class="tech-badge android"><i class='bx bx-mobile-alt'></i> Android SDK</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-content" data-aos="fade-left" data-aos-duration="1000">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3><i class='bx bx-briefcase-alt-2'></i> Android Developer @ G Tech Solutions</h3>
+
+            <p>
+                I am an Android Developer with hands-on experience building, debugging, and independently deploying
+                production-ready mobile applications to the Google Play Store. With a background in Information
+                Technology and practical full-stack training, I bridge the gap between seamless front-end mobile
+                interfaces and robust backend logic.
+            </p>
+            <p>
+                I am driven by writing clean, maintainable code and solving real-world problems. My expertise spans
+                Kotlin, Firebase, Retrofit, and OneSignal, with strong foundations in Java Full Stack development.
+            </p>
+
+            <div class="about-info">
+                <div class="info-item">
+                    <i class='bx bx-map'></i>
+                    <span>Pudukkottai, Tamil Nadu, India</span>
+                </div>
+                <div class="info-item">
+                    <i class='bx bx-envelope'></i>
+                    <span>harivk165@gmail.com</span>
+                </div>
+                <div class="info-item">
+                    <i class='bx bx-buildings'></i>
+                    <span>G Tech Solutions · Full-time</span>
+                </div>
+                <div class="info-item">
+                    <i class='bx bxl-play-store'></i>
+                    <span>Live Apps on Google Play Store</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== EXPERIENCE SECTION ==================== -->
+    <section class="experience" id="experience">
+        <h2 class="heading" data-aos="fade-up">My <span>Experience</span></h2>
+
+        <div class="timeline" data-aos="fade-up" data-aos-delay="200">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glass-card">
+                    <div class="exp-header">
+                        <div>
+                            <h3>Android Developer</h3>
+                            <h4><i class='bx bx-buildings'></i> G Tech Solutions</h4>
+                        </div>
+                        <div class="exp-meta">
+                            <span class="exp-type fulltime">Full-time</span>
+                            <span class="exp-date"><i class='bx bx-calendar'></i> Jul 2025 – Present · 1 yr</span>
+                            <span class="exp-location"><i class='bx bx-map-pin'></i> Pudukkottai, TN · On-site</span>
+                        </div>
+                    </div>
+
+                    <ul class="exp-points">
+                        <li>
+                            <i class='bx bx-check-circle'></i>
+                            Built and shipped live Android apps to the Google Play Store using Kotlin and Firebase
+                        </li>
+                        <li>
+                            <i class='bx bx-check-circle'></i>
+                            Integrated OneSignal push notifications and implemented real-time database features with Firebase
+                        </li>
+                        <li>
+                            <i class='bx bx-check-circle'></i>
+                            Debugged, tested, and maintained production app code — managing the full build-to-deploy cycle independently
+                        </li>
+                        <li>
+                            <i class='bx bx-check-circle'></i>
+                            Worked on Ginex POS — a multi-variant platform with 16 different app types built on the same codebase
+                        </li>
+                        <li>
+                            <i class='bx bx-check-circle'></i>
+                            Implemented printer connectivity, error resolution, and new business-specific feature concepts
+                        </li>
+                        <li>
+                            <i class='bx bx-check-circle'></i>
+                            Delivered Paravathavar Matrimony, Lifsea, and Kumari Foodie App — all production-grade Android applications
+                        </li>
+                    </ul>
+
+                    <div class="exp-tags">
+                        <span>Kotlin</span>
+                        <span>Firebase</span>
+                        <span>Android SDK</span>
+                        <span>OneSignal</span>
+                        <span>Retrofit</span>
+                        <span>Google Play Store</span>
+                        <span>Printer API</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SKILLS SECTION ==================== -->
+    <section class="skills" id="skills">
+        <h2 class="heading" data-aos="fade-up">My <span>Skills</span></h2>
+
+        <div class="skills-wrapper">
+            <!-- Android & Mobile -->
+            <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                <div class="skill-cat-header">
+                    <i class='bx bxl-android' style="color: #3ddc84;"></i>
+                    <h3>Android & Mobile</h3>
+                </div>
+                <div class="skill-bars">
+                    <div class="skill-bar-item">
+                        <div class="skill-label"><span>Kotlin</span><span class="skill-pct">85%</span></div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85"
+                                style="background: linear-gradient(90deg, #6c63ff, #3ddc84);"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-label"><span>Android SDK</span><span class="skill-pct">82%</span></div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="82"
+                                style="background: linear-gradient(90deg, #6c63ff, #3ddc84);"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-label"><span>Firebase (Auth / DB)</span><span class="skill-pct">80%</span></div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80"
+                                style="background: linear-gradient(90deg, #f7b731, #ff6b6b);"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-label"><span>Retrofit / REST API</span><span class="skill-pct">75%</span></div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="75"
+                                style="background: linear-gradient(90deg, #22d3ee, #6c63ff);"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-label"><span>OneSignal Push</span><span class="skill-pct">78%</span></div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="78"
+                                style="background: linear-gradient(90deg, #ff6b6b, #f7b731);"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Web & Backend -->
+            <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                <div class="skill-cat-header">
+                    <i class='bx bx-code-alt' style="color: #22d3ee;"></i>
+                    <h3>Web & Backend</h3>
+                </div>
+                <div class="skill-bars">
+                    <div class="skill-bar-item">
+                        <div class="skill-label"><span>Core Java</span><span class="skill-pct">80%</span></div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80"
+                                style="background: linear-gradient(90deg, #f7b731, #ff6b6b);"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-label"><span>HTML / CSS</span><span class="skill-pct">75%</span></div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="75"
+                                style="background: linear-gradient(90deg, #ff6b6b, #f7b731);"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-label"><span>JavaScript</span><span class="skill-pct">65%</span></div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="65"
+                                style="background: linear-gradient(90deg, #22d3ee, #6c63ff);"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-label"><span>MySQL</span><span class="skill-pct">70%</span></div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="70"
+                                style="background: linear-gradient(90deg, #6c63ff, #22d3ee);"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-label"><span>Git / GitHub</span><span class="skill-pct">78%</span></div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="78"
+                                style="background: linear-gradient(90deg, #3ddc84, #22d3ee);"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tools & Platforms -->
+            <div class="skill-tools" data-aos="fade-up" data-aos-delay="300">
+                <div class="skill-cat-header">
+                    <i class='bx bx-wrench' style="color: #f7b731;"></i>
+                    <h3>Tools & Platforms</h3>
+                </div>
+                <div class="tools-grid">
+                    <div class="tool-chip"><i class='bx bxl-android'></i> Android Studio</div>
+                    <div class="tool-chip"><i class='bx bxl-google'></i> Google Play Store</div>
+                    <div class="tool-chip"><i class='bx bxl-firebase'></i> Firebase Console</div>
+                    <div class="tool-chip"><i class='bx bxl-github'></i> GitHub</div>
+                    <div class="tool-chip"><i class='bx bx-printer'></i> Printer Integration</div>
+                    <div class="tool-chip"><i class='bx bx-bell'></i> OneSignal</div>
+                    <div class="tool-chip"><i class='bx bx-transfer-alt'></i> Retrofit / OkHttp</div>
+                    <div class="tool-chip"><i class='bx bx-layer'></i> MVVM Architecture</div>
+                    <div class="tool-chip"><i class='bx bx-bug'></i> Debugging & Testing</div>
+                    <div class="tool-chip"><i class='bx bx-rocket'></i> App Deployment</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PROJECTS SECTION ==================== -->
+    <section class="projects" id="projects">
+        <h2 class="heading" data-aos="fade-up">My <span>Projects</span></h2>
+        <p class="projects-sub" data-aos="fade-up" data-aos-delay="100">
+            Production apps built and maintained at G Tech Solutions — all live on Google Play Store
+        </p>
+
+        <div class="projects-grid">
+            <!-- Ginex POS -->
+            <div class="project-card glass-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="project-top">
+                    <div class="project-icon" style="background: linear-gradient(135deg, #6c63ff, #3ddc84);">
+                        <i class='bx bx-store-alt'></i>
+                    </div>
+                    <div class="project-badges">
+                        <span class="project-badge featured">⭐ Featured</span>
+                        <span class="project-badge live">● Live</span>
+                    </div>
+                </div>
+                <h3>Ginex POS</h3>
+                <p>A comprehensive Point-of-Sale platform with <strong>16 different app variants</strong> built on the same codebase, tailored for various business types. Worked on bug fixes, printer hardware connectivity, and implementing new business-specific concepts.</p>
+                <div class="project-highlights">
+                    <span><i class='bx bx-check'></i> 16 App Variants on Same Platform</span>
+                    <span><i class='bx bx-check'></i> Printer Hardware Integration</span>
+                    <span><i class='bx bx-check'></i> Error Fixing & New Feature Implementation</span>
+                </div>
+                <div class="project-tags">
+                    <span>Kotlin</span><span>Android SDK</span><span>Printer API</span><span>Firebase</span>
+                </div>
+            </div>
+
+            <!-- Paravathavar Matrimony -->
+            <div class="project-card glass-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="project-top">
+                    <div class="project-icon" style="background: linear-gradient(135deg, #ff6b6b, #f7b731);">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                    <div class="project-badges">
+                        <span class="project-badge live">● Live</span>
+                    </div>
+                </div>
+                <h3>Paravathavar Matrimony</h3>
+                <p>A community matrimony app built for the Paravathavar community. Features profile creation, intelligent matchmaking filters, and real-time push notifications for match alerts and messages.</p>
+                <div class="project-highlights">
+                    <span><i class='bx bx-check'></i> Community Matchmaking System</span>
+                    <span><i class='bx bx-check'></i> Real-time Push Notifications</span>
+                    <span><i class='bx bx-check'></i> Profile Management & Filters</span>
+                </div>
+                <div class="project-tags">
+                    <span>Kotlin</span><span>Firebase</span><span>OneSignal</span><span>Retrofit</span>
+                </div>
+            </div>
+
+            <!-- Lifsea -->
+            <div class="project-card glass-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="project-top">
+                    <div class="project-icon" style="background: linear-gradient(135deg, #22d3ee, #6c63ff);">
+                        <i class='bx bx-leaf'></i>
+                    </div>
+                    <div class="project-badges">
+                        <span class="project-badge live">● Live</span>
+                    </div>
+                </div>
+                <h3>Lifsea</h3>
+                <p>An Android application featuring lifestyle-oriented content and services. Contributed to feature development, debugging production issues, implementing new concepts, and ensuring a smooth, polished user experience.</p>
+                <div class="project-highlights">
+                    <span><i class='bx bx-check'></i> Feature Development & New Concepts</span>
+                    <span><i class='bx bx-check'></i> Production Bug Resolution</span>
+                    <span><i class='bx bx-check'></i> UX Improvements</span>
+                </div>
+                <div class="project-tags">
+                    <span>Kotlin</span><span>Android SDK</span><span>Firebase</span>
+                </div>
+            </div>
+
+            <!-- Kumari Foodie App -->
+            <div class="project-card glass-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="project-top">
+                    <div class="project-icon" style="background: linear-gradient(135deg, #f7b731, #ff6b6b);">
+                        <i class='bx bx-food-menu'></i>
+                    </div>
+                    <div class="project-badges">
+                        <span class="project-badge live">● Live</span>
+                    </div>
+                </div>
+                <h3>Kumari Foodie App</h3>
+                <p>A food ordering and delivery app for the Kumari region. Worked on error fixes, menu management, order tracking features, and integrating real-time order status updates for both users and restaurants.</p>
+                <div class="project-highlights">
+                    <span><i class='bx bx-check'></i> Real-time Order Tracking</span>
+                    <span><i class='bx bx-check'></i> Menu & Order Management</span>
+                    <span><i class='bx bx-check'></i> Error Fixing & Optimization</span>
+                </div>
+                <div class="project-tags">
+                    <span>Kotlin</span><span>Firebase</span><span>Retrofit</span><span>OneSignal</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section class="contact" id="contact">
+        <h2 class="heading" data-aos="fade-up">Contact <span>Me!</span></h2>
+        <p class="contact-sub" data-aos="fade-up" data-aos-delay="100">
+            Open to new opportunities, collaborations, or just a friendly conversation!
+        </p>
+
+        <div class="contact-grid" data-aos="fade-up" data-aos-delay="200">
+            <a href="mailto:harivk165@gmail.com" class="contact-card glass-card" id="contact-email">
+                <div class="contact-icon" style="background: linear-gradient(135deg, #6c63ff, #22d3ee);">
+                    <i class='bx bx-envelope'></i>
+                </div>
+                <h3>Email</h3>
+                <p>harivk165@gmail.com</p>
+            </a>
+
+            <a href="tel:+919942148933" class="contact-card glass-card" id="contact-phone">
+                <div class="contact-icon" style="background: linear-gradient(135deg, #3ddc84, #22d3ee);">
+                    <i class='bx bx-phone'></i>
+                </div>
+                <h3>Phone</h3>
+                <p>+91 99421 48933</p>
+            </a>
+
+            <div class="contact-card glass-card" id="contact-location">
+                <div class="contact-icon" style="background: linear-gradient(135deg, #f7b731, #ff6b6b);">
+                    <i class='bx bx-map'></i>
+                </div>
+                <h3>Location</h3>
+                <p>Pudukkottai, Tamil Nadu, India</p>
+            </div>
+
+            <a href="https://www.linkedin.com/in/srihari18" target="_blank" class="contact-card glass-card" id="contact-linkedin">
+                <div class="contact-icon" style="background: linear-gradient(135deg, #0077b5, #6c63ff);">
+                    <i class='bx bxl-linkedin'></i>
+                </div>
+                <h3>LinkedIn</h3>
+                <p>linkedin.com/in/srihari18</p>
+            </a>
+        </div>
+
+        <div class="social-media" data-aos="fade-up" data-aos-delay="300">
+            <a href="https://www.linkedin.com/in/srihari18" target="_blank" id="linkedin-contact" title="LinkedIn">
+                <i class='bx bxl-linkedin'></i>
+            </a>
+            <a href="https://github.com/195314" target="_blank" id="github-contact" title="GitHub">
+                <i class='bx bxl-github'></i>
+            </a>
+            <a href="mailto:harivk165@gmail.com" id="email-contact" title="Email">
+                <i class='bx bx-envelope'></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>© 2025 <span>Srihari</span> · Android Developer · Pudukkottai, Tamil Nadu</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home" id="back-to-top" title="Back to top"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+    <!-- ==================== SCRIPTS ==================== -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
