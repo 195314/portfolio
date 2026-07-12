@@ -938,9 +938,9 @@ body {
 
 .skills-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 2.5rem;
-    max-width: 1080px;
+    max-width: 820px;
     margin: 0 auto;
 }
 
