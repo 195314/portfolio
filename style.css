@@ -1528,3 +1528,83 @@ body {
         text-align: center;
     }
 }
+
+/* ============================================================
+   PROJECT CARD - TECH DIVE ACCORDION
+   ============================================================ */
+.tech-dive-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    color: var(--text-muted);
+    font-family: var(--font-main);
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 1rem 1.4rem;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: var(--transition);
+    margin-top: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.tech-dive-btn:hover,
+.tech-dive-btn.active {
+    background: rgba(108, 99, 255, 0.08);
+    border-color: rgba(108, 99, 255, 0.25);
+    color: var(--text);
+}
+
+.tech-dive-btn i {
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.tech-dive-panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background: rgba(255, 255, 255, 0.01);
+    border-radius: var(--radius-sm);
+}
+
+.tech-dive-detail {
+    padding: 1.2rem 1.4rem;
+    border-left: 2px solid var(--primary);
+    font-size: 1.25rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.tech-dive-detail strong {
+    color: var(--text);
+    font-weight: 600;
+}
+
+.tech-dive-detail ul {
+    list-style: none;
+    padding-left: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.tech-dive-detail li {
+    position: relative;
+    padding-left: 1.2rem;
+}
+
+.tech-dive-detail li::before {
+    content: '▪';
+    color: var(--primary);
+    position: absolute;
+    left: 0;
+    top: -0.1rem;
+    font-size: 1rem;
+}

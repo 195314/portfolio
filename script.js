@@ -265,3 +265,23 @@ projectCards.forEach(card => {
         card.style.transition = 'transform 0.1s ease, border-color 0.35s ease, box-shadow 0.35s ease, background 0.35s ease';
     });
 });
+
+/* ============================================================
+   PROJECT CARD — Technical Deep-Dive Expander
+   ============================================================ */
+function toggleTechDive(btn) {
+    const panel = btn.nextElementSibling;
+    const chevron = btn.querySelector('.toggle-chevron');
+    
+    panel.classList.toggle('active');
+    btn.classList.toggle('active');
+    
+    if (panel.classList.contains('active')) {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+        chevron.style.transform = "rotate(180deg)";
+    } else {
+        panel.style.maxHeight = null;
+        chevron.style.transform = "rotate(0deg)";
+    }
+}
+
