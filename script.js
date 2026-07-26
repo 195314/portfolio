@@ -266,37 +266,5 @@ projectCards.forEach(card => {
     });
 });
 
-/* ============================================================
-   PROJECT CARD — Technical Deep-Dive Expander
-   ============================================================ */
-function initTechDive() {
-    const techBtns = document.querySelectorAll('.tech-dive-btn');
-    techBtns.forEach(btn => {
-        // Prevent duplicate listener registration
-        if (btn.getAttribute('data-listener') === 'true') return;
-        btn.setAttribute('data-listener', 'true');
 
-        btn.addEventListener('click', () => {
-            const panel = btn.nextElementSibling;
-            const chevron = btn.querySelector('.toggle-chevron');
-            
-            panel.classList.toggle('active');
-            btn.classList.toggle('active');
-            
-            if (panel.classList.contains('active')) {
-                panel.style.maxHeight = panel.scrollHeight + "px";
-                if (chevron) chevron.style.transform = "rotate(180deg)";
-            } else {
-                panel.style.maxHeight = null;
-                if (chevron) chevron.style.transform = "rotate(0deg)";
-            }
-        });
-    });
-}
-
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initTechDive);
-} else {
-    initTechDive();
-}
 
