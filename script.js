@@ -269,9 +269,13 @@ projectCards.forEach(card => {
 /* ============================================================
    PROJECT CARD — Technical Deep-Dive Expander
    ============================================================ */
-document.addEventListener('DOMContentLoaded', () => {
+function initTechDive() {
     const techBtns = document.querySelectorAll('.tech-dive-btn');
     techBtns.forEach(btn => {
+        // Prevent duplicate listener registration
+        if (btn.getAttribute('data-listener') === 'true') return;
+        btn.setAttribute('data-listener', 'true');
+
         btn.addEventListener('click', () => {
             const panel = btn.nextElementSibling;
             const chevron = btn.querySelector('.toggle-chevron');
@@ -288,5 +292,11 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
-});
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initTechDive);
+} else {
+    initTechDive();
+}
 
