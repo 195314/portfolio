@@ -269,19 +269,24 @@ projectCards.forEach(card => {
 /* ============================================================
    PROJECT CARD — Technical Deep-Dive Expander
    ============================================================ */
-function toggleTechDive(btn) {
-    const panel = btn.nextElementSibling;
-    const chevron = btn.querySelector('.toggle-chevron');
-    
-    panel.classList.toggle('active');
-    btn.classList.toggle('active');
-    
-    if (panel.classList.contains('active')) {
-        panel.style.maxHeight = panel.scrollHeight + "px";
-        chevron.style.transform = "rotate(180deg)";
-    } else {
-        panel.style.maxHeight = null;
-        chevron.style.transform = "rotate(0deg)";
-    }
-}
+document.addEventListener('DOMContentLoaded', () => {
+    const techBtns = document.querySelectorAll('.tech-dive-btn');
+    techBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const panel = btn.nextElementSibling;
+            const chevron = btn.querySelector('.toggle-chevron');
+            
+            panel.classList.toggle('active');
+            btn.classList.toggle('active');
+            
+            if (panel.classList.contains('active')) {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+                if (chevron) chevron.style.transform = "rotate(180deg)";
+            } else {
+                panel.style.maxHeight = null;
+                if (chevron) chevron.style.transform = "rotate(0deg)";
+            }
+        });
+    });
+});
 
